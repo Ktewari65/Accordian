@@ -1,0 +1,55 @@
+.wrapper
+{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: top;
+}
+
+.accordian 
+{
+  width: 500px;
+}
+
+.item
+{
+  background: rgb(238, 236, 232);
+  margin-bottom: 5px;
+  padding: 10px 20px;
+}
+
+.title
+{
+  color: rgb(31, 28, 28);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.content 
+{
+  color: #8b7f75 ;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(1,0,1,0);
+}
+
+.content.show
+{
+  height: auto;
+  max-height: 9999px;
+  transition: all 0.5s cubic-bezier(1,0,1,0);
+}
+.position {
+position: absolute;
+top: 1050px;
+right: 10px
+}
+
+.header{
+  position: absolute;
+  top: 1000px;
+  left: 450px;
+}
+
